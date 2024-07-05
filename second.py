@@ -1,10 +1,19 @@
+import random
+
 def get_numbers_ticket(min, max, quantity):
     final_list = []
     if min>=1 and max>=1 and max<=1000 and quantity<=max-min+1:
-        print('yay')
+
+        counter = 0
+        while counter < quantity:
+            random_num = random.randrange(min, max+1)
+            if random_num in final_list:
+                pass
+            else:
+                final_list.append(random_num)
+                counter+=1
     else:
         print(final_list)
-        return final_list
     print(final_list)
     return final_list
 
