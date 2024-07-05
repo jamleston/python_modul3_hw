@@ -14,6 +14,7 @@ def get_numbers_ticket(min, max, quantity):
                 counter+=1
     else:
         print(final_list)
+    final_list.sort()
     print(final_list)
     return final_list
 
